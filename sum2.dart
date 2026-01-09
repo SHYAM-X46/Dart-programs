@@ -1,12 +1,8 @@
+import 'dart:io';
 void main(){
-  int a=10;
-  int b=5;
-  int c=a+b;
-  print(c);
-  print("the sum is:$c");
-  print(a+b);
-  // int? c;
-  // int b=10;
-  // int sum=c!+b;
-  // print(sum);
+  print("Enter a numbe:");
+  int? a=int.parse(stdin.readLineSync()!);
+  int b=10;
+  int sum=a!+b;
+  print("the sum is:$sum");
 } 
